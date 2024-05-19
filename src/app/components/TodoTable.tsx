@@ -87,7 +87,7 @@ const TodoTable = () => {
                 )}
               </td>
               <td className="rounded-lg  px-4 py-2 shadow-lg text-center m-2">{todo.status}</td>
-              <td className="rounded-lg  px-4 py-2 shadow-lg text-center text-between m-2 justify-center content-center flex gap-2 md:gap-4 lg:gap-6 xl:gap-8">
+              <td className="rounded-lg  px-4 py-2 shadow-lg text-center text-between m-2 justify-center content-center flex flex-wrap gap-2 md:gap-4 lg:gap-6 xl:gap-8">
               {editId !== todo.id && (
                   <button onClick={() => setEditId(todo.id)} className="px-4 py-2 justify-between rounded-lg bg-yellow-500 content-center ">
                     Edit
